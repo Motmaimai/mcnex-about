@@ -1442,8 +1442,11 @@
   /*=============================================
     =            light gallery active            =
     =============================================*/
-
-  $(".video-popup").lightGallery();
+    $('#video-popup').lightGallery({
+      // plugins : [lgVideo],
+      videojs: true, // Enable video.js for better video controls
+  });
+  
   $(".image-popup").lightGallery({
     selector: ".single-gallery-thumb"
   });

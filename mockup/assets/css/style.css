@@ -1597,7 +1597,7 @@ input::placeholder {
 }
 .header-area.header-sticky.is-sticky .header-search {
   -ms-flex-preferred-size: 180px;
-      flex-basis: 180px;
+      flex-basis: 310px;
 }
 .header-area.header-sticky.is-sticky .header-below {
   display: none;
@@ -2468,6 +2468,9 @@ input::placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 315px;
+}
+.header-search .action-form{
+  display: flex;
 }
 .header-search--style3 {
   position: relative;
@@ -4244,9 +4247,6 @@ input::placeholder {
 /*=============================================
 =            footer            =
 =============================================*/
-.footer-content-wrapper {
-  margin-bottom: 50px;
-}
 @media only screen and (max-width: 767px) {
   .footer-content-wrapper {
     margin-bottom: 0;
@@ -4579,6 +4579,7 @@ input::placeholder {
 }
 
 .footer-copyright-left {
+  text-align: center;
   color: #f1f1f1;
 }
 .footer-copyright-left--style2 {
